@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Room</title>
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    <script>
+    onload = function() {
+               
+    }
+    </script>
+  </head>
+  <body>
+    <a-scene>      
+      <a-assets>
+    <a-asset-item id="room" src="room.dae">
+  </a-assets>
+  <a-collada-model src="#room"></a-collada-model>
+
+  <a-light type="hemisphere" color="#AAA" position="-1 1.5 -1"></a-light>
+      <a-sky color="skyblue"></a-sky>
+      <a-entity position="-2 0 -2">
+        <a-camera>
+            <a-cursor color="#2E3A87"></a-cursor>
+        </a-camera>
+      </a-entity>
+    </a-scene>
+
+  </body>
+</html>
